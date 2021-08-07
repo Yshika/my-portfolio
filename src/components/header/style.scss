@@ -1,0 +1,47 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.sidebar-container {
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/1005644/pexels-photo-1005644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+
+  .sidebar {
+    background-color: rgba($background, 0.8);
+    height: 100%;
+    text-align: center;
+    padding: 30px 5px;
+
+    .avatar {
+      .avatar-pic {
+        height: 152px;
+        width: 152px;
+        border-radius: 50%;
+        // border-style: solid;
+        // border-width: thick;
+        // border-color: #002e4d;
+        box-shadow: 0px 0px 8px 2px #a76672;
+        -webkit-user-drag: none;
+      }
+      .avatar-post {
+        font-weight: 300;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .lists {
+      .nav-list {
+        display: flex;
+        padding:0.7rem 0.6rem;
+        a:hover {
+          color: $heading;
+          text-decoration: none;
+        }
+        .active {
+          color: $heading;
+        }
+      }
+    }
+  }
+}
